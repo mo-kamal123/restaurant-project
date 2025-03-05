@@ -11,6 +11,7 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 // import HomeIcon from "@mui/icons-material/Home";
 import logo from "../../assets/logo-text (1).png";
 import person from "../../assets/1 (1).jpg";
+// import { Opacity } from "@mui/icons-material";
 export default function Navbar() {
   const [open, setOpen] = React.useState(false);
   const pages = [
@@ -25,7 +26,11 @@ export default function Navbar() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 300 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box
+      sx={{ width: 300, backgroundColor: "rgba(44, 47, 251, 0.26)", height: "100vh" }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
       <List>
         {pages.map((page) => (
           <MenuItem

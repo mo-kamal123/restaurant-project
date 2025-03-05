@@ -6,7 +6,9 @@ export default function MasterLayout() {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div style={{ padding: "30px" , backgroundColor:"#f1f1f1" , height:"100vh"}}>
+        <Outlet />
+      </div>
     </div>
   );
 }
